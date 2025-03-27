@@ -1,0 +1,23 @@
+research_task:
+  description: >
+    Conduct a thorough research of all trending topics in India in the past week and find the most funny topic.
+    Make sure you find any interesting and relevant details of why the topic is funny given
+    the current date is {current_day}.{current_month}.{current_year}
+  expected_output: >
+    The most trending fun topic in India with the details of why this topic is trending and whats funny about it.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Based on the funny trending topic you got and write a detailed prompt. The prompt should include following details.
+    Subject: What is in the image? (A character, landscape, object?)
+    Environment/Setting: Where does it take place? (City, forest, fantasy world?)
+    Lighting & Mood: Is it bright, dark, moody, vibrant?
+    Details & Style: Is it realistic, cartoon, cyberpunk, impressionist painting?
+    Composition & Perspective: Close-up, wide shot, from above?
+    Use the image generation tool to generate the funny meme.  The tool accepts input prompt as a string.
+    Provie a caption and relevant hashtags for the meme. 
+  expected_output: >
+    A funny meme image using the image generation tool.
+    HAshtags and caption for the funny meme. 
+  agent: reporting_analyst
